@@ -11,4 +11,4 @@ The canonical source lives in the app's main repository under
 `store-listing/`. This mirror exists so the documents can be served
 publicly without exposing the app source.
 
-Questions: brian@highergroundcap.com
+Questions: colorbymath@highergroundcap.com
