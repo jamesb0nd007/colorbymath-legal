@@ -14,12 +14,19 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 4, 2026</p>
+  <p class="updated">Last updated: August 2, 2026</p>
 
   <p><strong>Color by Math</strong> ("the App") is a children's educational coloring and math game designed for kids ages 6+. We take children's privacy extremely seriously.</p>
 
   <h2>Summary</h2>
-  <p>We collect <strong>no personally identifiable information</strong>. The App works entirely offline for all gameplay. There are no user accounts, no behavioral analytics, no advertising, and no social features. The App does transmit a small amount of <strong>anonymous data</strong> to two service providers so it can function correctly: crash reports (Sentry) and premium subscription state (RevenueCat). Both are detailed below. No data ever contains your child's name, photos, or content they produced.</p>
+  <p>We collect <strong>no personally identifiable information</strong>. The App works entirely offline for all gameplay. There are no user accounts with us, no behavioral analytics, no advertising, and no social features.</p>
+  <p>Three things can leave the device, and <strong>none of them is your child's content going to us</strong>:</p>
+  <ul>
+    <li>Anonymous crash and diagnostic reports (Sentry) &mdash; see "Third-Party Services" below.</li>
+    <li>Anonymous premium subscription state (RevenueCat) &mdash; see "Third-Party Services" below.</li>
+    <li>If, and only if, a parent switches it on: a backup of your family's profiles and pictures, saved to <strong>your own cloud account</strong> &mdash; see "Cloud Backup" below.</li>
+  </ul>
+  <p>We run no servers that receive your family's data. No data we receive ever contains your child's name, photos, or content they produced, and the backup &mdash; which does contain those things &mdash; never comes to us at all. <strong>Your family's data never leaves your control.</strong></p>
 
   <h2>Information We Collect</h2>
   <p>The App does <strong>not</strong> collect: personal names, email addresses, phone numbers, physical addresses, birthdays, government IDs, location data (coarse or precise), photos or videos, audio recordings, contact lists, calendar data, browsing history, health or fitness data, or any content your child creates.</p>
@@ -30,6 +37,7 @@
     <li><strong>Crash reports</strong> — technical information about crashes (stack trace, memory state, app version, OS version, device model) plus an anonymous installation identifier used only to group reports by device. Sent to Sentry only when a crash actually happens.</li>
     <li><strong>Diagnostics</strong> — anonymous screen-transition timing (20% sample) used to detect slow screens and fix them. Sent to Sentry along with crash reports.</li>
   </ul>
+  <p>Cloud Backup is not an exception to this. When a parent turns it on, your child's profiles and pictures are written to <strong>your</strong> cloud account &mdash; we neither receive them nor hold a copy, and we have no way to read them. See "Cloud Backup" below.</p>
 
   <h2>Third-Party Services</h2>
   <p>The App uses exactly two third-party services, both bound by contractual data-protection agreements:</p>
@@ -38,10 +46,13 @@
     <li><strong>Sentry</strong> (<a href="https://sentry.io/privacy/">privacy policy</a>) — crash and performance diagnostics. Receives the anonymous crash / diagnostic data described above.</li>
   </ul>
   <p>All data transmitted to these services is encrypted in transit (HTTPS/TLS). Neither service receives content your child produces, coloring pictures, session history, badges, or gameplay data.</p>
+  <p>If a parent enables Cloud Backup, the App additionally communicates with <strong>Apple iCloud</strong> or <strong>Google Drive</strong>. These are not services we contract with on your behalf &mdash; they are <em>your</em> accounts, reached with access you grant and can revoke at any time, and the data stored there is governed by your agreement with Apple or Google.</p>
+  <p>The App contains no advertising frameworks, behavioral analytics tools, social media integrations, or external links beyond the parental-gated share action initiated by the parent.</p>
 
   <h2 id="data-deletion">Data Deletion Requests</h2>
   <p>Even though the data described above is anonymous, we honor deletion requests. To have your data removed, email <strong>colorbymath@highergroundcap.com</strong> from any address you like and tell us "please delete my data associated with Color by Math." We will remove the associated records from both RevenueCat and Sentry within 30 days and confirm by reply.</p>
   <p>If you don't want to wait, uninstalling the App removes all on-device data immediately (game progress, badges, saved pictures). Anonymous data already sent to Sentry is automatically deleted within 90 days regardless of whether you request removal. RevenueCat data is retained for as long as the App is installed on your device or you have an active subscription; deletion on request removes it earlier.</p>
+  <p>If you have turned on Cloud Backup, that backup sits in <strong>your own</strong> cloud account, so there is nothing for us to delete &mdash; we never had it. You can inspect or delete it yourself at any time using your cloud provider's own tools, without asking us and without our involvement. Deleting it there deletes it; there is no second copy anywhere else. Uninstalling the App does not remove it, and neither does a deletion request to us.</p>
 
   <h2>Children's Privacy (COPPA Compliance)</h2>
   <p>The App is designed for children ages 6 and up and complies with the U.S. Children's Online Privacy Protection Act (COPPA), the EU General Data Protection Regulation (GDPR), and equivalent children's privacy laws worldwide.</p>
@@ -51,7 +62,8 @@
     <li>No behavioral analytics or usage telemetry beyond what's described above (anonymous crash / performance diagnostics)</li>
     <li>No advertising of any kind — no banners, video ads, or advertising SDKs</li>
     <li>In-app purchases are gated behind a parental gate that requires solving a math problem designed to be hard for young children</li>
-    <li>The only third-party SDKs that transmit data are RevenueCat and Sentry, described above</li>
+    <li>The only third-party SDKs that transmit data to a service we contract with are RevenueCat and Sentry, described above</li>
+    <li>If a parent enables Cloud Backup, the App also talks to <strong>your own</strong> cloud storage (Apple iCloud or Google Drive), using access you grant and can revoke. That data goes to your account under your provider's privacy policy — never to us. No child-facing part of the App can turn this on: it is behind the parental gate.</li>
   </ul>
 
   <h2>Offline Gameplay</h2>
@@ -60,16 +72,30 @@
     <li>A one-time RevenueCat sync at app launch if your device is online (to check subscription state)</li>
     <li>Crash upload if the App actually crashes</li>
     <li>Google Play / App Store purchase flow if you tap "Buy Premium"</li>
+    <li>If a parent has switched on Cloud Backup, syncing that backup to the parent's own cloud account</li>
   </ul>
+  <p>A child playing the App never triggers the purchase flow or a backup sync.</p>
 
   <h2>Parental Controls</h2>
-  <p>Features that leave the App context (saving art to the device photo library, sharing art, accessing settings, opening the Parent Dashboard, purchasing Premium) are protected by a parental gate that requires solving a math problem designed to be hard for young children. After three wrong answers in a row, the gate enters a cooldown period to discourage guessing.</p>
+  <p>Features that leave the App context (saving art to the device photo library, sharing art, accessing settings, opening the Parent Dashboard, purchasing Premium, turning on Cloud Backup) are protected by a parental gate that requires solving a math problem designed to be hard for young children. After three wrong answers in a row, the gate enters a cooldown period to discourage guessing.</p>
 
   <h2>Photo Library Access</h2>
   <p>If a parent chooses to save a completed coloring to the device photo library, the App will request permission to access the photo library. This permission is triggered only by explicit parental action behind the parental gate. No photos are uploaded, transmitted, or shared with anyone.</p>
 
   <h2>Data Storage</h2>
-  <p>The App stores game progress (completed pages, star ratings, adaptive Smart Mode level, earned badges, session history, settings preferences, selected language) locally on the device using standard on-device storage. This data never leaves the device and is deleted when the App is uninstalled. Parents can reset this data at any time from the Parent Dashboard, which also keeps a one-time backup for recovery.</p>
+  <p>The App stores game progress (completed pages, star ratings, adaptive Smart Mode level, earned badges, session history, settings preferences, selected language) locally on the device using standard on-device storage. Unless a parent switches on Cloud Backup, this data never leaves the device and is deleted when the App is uninstalled. Parents can reset this data at any time from the Parent Dashboard, which also keeps a one-time backup for recovery.</p>
+
+  <h2>Cloud Backup</h2>
+  <p>Cloud Backup is <strong>off until a parent turns it on</strong>, from Settings, behind the parental gate. It exists so a family does not lose their pictures and progress when a device is lost or replaced.</p>
+  <p>The important part is where the backup goes: <strong>into your own cloud account</strong> &mdash; your Apple iCloud or your Google Drive &mdash; and nowhere else. We do not operate a backup server. Your family's data never passes through us, is never stored by us, and cannot be read by us. It never leaves your control.</p>
+  <ul>
+    <li><strong>What is saved:</strong> the kid profiles you created (display name, avatar, settings), coloring progress and finished pictures, badges, and Smart Mode difficulty history &mdash; the same things stored on the device.</li>
+    <li><strong>Where it goes:</strong> your own iCloud or Google Drive account, using the credentials you sign in with. Your cloud provider's privacy policy governs storage in your account.</li>
+    <li><strong>What we can see:</strong> nothing. We receive no copy and hold no key.</li>
+    <li><strong>On Google Drive,</strong> the App asks only for the <code>drive.appdata</code> permission, which grants access to a private folder this App creates for itself. It <strong>cannot see, read, or touch any other file in your Drive</strong>.</li>
+    <li><strong>Turning it off:</strong> disconnect at any time from Settings. Your backup is not deleted when you disconnect &mdash; it stays in your account until you delete it, which you can do yourself through iCloud or Google Drive.</li>
+    <li><strong>No account with us:</strong> there is still no registration, no sign-up, and no profile held by us. You are signing in to <em>your</em> provider, not to us.</li>
+  </ul>
 
   <h2>Changes to This Policy</h2>
   <p>If we ever change this policy, we will update the "Last updated" date at the top of this page and include a notice in the App's update notes.</p>
